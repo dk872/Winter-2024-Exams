@@ -2,7 +2,7 @@
 
 'use strict';
 
-Skip = (T, ...Remove) => {
+const Skip = (T, ...Remove) => {
   x = 0;
   for (C of T) {
     for (X of Remove) {
