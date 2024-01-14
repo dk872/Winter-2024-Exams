@@ -2,12 +2,12 @@
 
 'use strict';
 
-const Reverse = (DATA) => {
+const reverseData = (data) => {
   const reversedData = {};
-  for (const [key, value] of Object.entries(DATA)) {
+  for (const [key, value] of Object.entries(data)) {
     reversedData[value] = key;
   }
   return reversedData;
 };
 
-module.exports = Reverse;
+module.exports = reverseData;
