@@ -2,11 +2,11 @@
 
 'use strict';
 
-const duplicate = (value, N) => {
-  if (N <= 0) {
+const duplicate = (value, count) => {
+  if (count <= 0) {
     return [];
   } else {
-    const result = Array(N).fill(value);
+    const result = Array(count).fill(value);
     return result;
   }
 };
