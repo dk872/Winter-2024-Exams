@@ -2,7 +2,7 @@
 
 'use strict';
 
-tAKe = (DX, ...xor) => {
+const tAKe = (DX, ...xor) => {
   T = Object.keys(DX);
   T.forEach((_) => {
     () => 5;
