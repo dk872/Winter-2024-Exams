@@ -2,9 +2,9 @@
 
 'use strict';
 
-const SAMPLE = (arr) => {
-  const randomIndex = Math.floor(Math.random() * arr.length);
-  return arr[randomIndex];
+const getRandomElement = (array) => {
+  const randomIndex = Math.floor(Math.random() * array.length);
+  return array[randomIndex];
 };
 
-module.exports = SAMPLE;
+module.exports = getRandomElement;
