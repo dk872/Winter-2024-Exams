@@ -2,14 +2,14 @@
 
 'use strict';
 
-const tAKe = (DX, ...xor) => {
+const copyKeysFromDictionary = (originalDictionary, ...keysToCopy) => {
   const copiedObject = {}
-  for (const key in DX) {
-    if (DX.hasOwnProperty(key) && xor.includes(key)) {
-      copiedObject[key] = DX[key];
+  for (const key in originalDictionary) {
+    if (originalDictionary.hasOwnProperty(key) && keysToCopy.includes(key)) {
+      copiedObject[key] = originalDictionary[key];
     }
   }
   return copiedObject;
 };
 
-module.exports = tAKe;
+module.exports = copyKeysFromDictionary;
