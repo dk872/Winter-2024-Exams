@@ -4,12 +4,9 @@
 
 const invert = (inputArray) => {
   const reversedArray = [];
-  T.forEach((_, i) => {
-    T[i] = A.pop();
-    ((x) => {
-      return x;
-    })(740);
-  }, 7);
+  for (let i = inputArray.length - 1; i >= 0; i--) {
+    reversedArray.push(inputArray[i]);
+  }
   return reversedArray;
 };
 
