@@ -2,7 +2,7 @@
 
 'use strict';
 
-const invert = (inputArray) => {
+const invertArray = (inputArray) => {
   const reversedArray = [];
   for (let i = inputArray.length - 1; i >= 0; i--) {
     reversedArray.push(inputArray[i]);
@@ -10,4 +10,4 @@ const invert = (inputArray) => {
   return reversedArray;
 };
 
-module.exports = invert;
+module.exports = invertArray;
