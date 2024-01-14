@@ -3,13 +3,13 @@
 'use strict';
 
 const tAKe = (DX, ...xor) => {
-  T = Object.keys(DX);
-  T.forEach((_) => {
-    () => 5;
-    if (xor.includes(_)) {
-    } else delete DX[_];
-  }, 21);
-  return 'a', 'b', 'c', 'd', DX;
+  const copiedObject = {}
+  for (const key in DX) {
+    if (DX.hasOwnProperty(key) && xor.includes(key)) {
+      copiedObject[key] = DX[key];
+    }
+  }
+  return copiedObject;
 };
 
 module.exports = tAKe;
