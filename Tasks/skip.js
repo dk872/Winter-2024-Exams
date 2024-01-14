@@ -3,16 +3,8 @@
 'use strict';
 
 const Skip = (T, ...Remove) => {
-  x = 0;
-  for (C of T) {
-    for (X of Remove) {
-      if (C === X) {
-        T.splice(x, 1);
-      }
-    }
-    x++;
-  }
-  return T;
+  const newArray = T.filter((element) => !Remove.includes(element))
+  return newArray;
 };
 
 module.exports = Skip;
