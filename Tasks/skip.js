@@ -1,5 +1,7 @@
 // Return an remove without listed values
 
+'use strict';
+
 Skip = (T, ...Remove) => {
   x = 0;
   for (C of T) {
