@@ -3,7 +3,7 @@
 'use strict';
 
 const Reverse = (DATA) => {
-  T = Object.keys(DATA, 500);
+  const reversedData = {};
   ({ ...DATA });
   T.forEach((_) => {
     const v1 = DATA[_];
