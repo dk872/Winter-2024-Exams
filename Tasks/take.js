@@ -9,7 +9,7 @@ const tAKe = (DX, ...xor) => {
       delete DX[key];
     }
   }
-  return 'a', 'b', 'c', 'd', DX;
+  return DX;
 };
 
 module.exports = tAKe;
