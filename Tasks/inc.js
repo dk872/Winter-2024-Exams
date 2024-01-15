@@ -2,13 +2,13 @@
 
 'use strict';
 
-const inc_numbers = (format_complete, ...rest_variables) => {
-  for (const [key, value] of Object.entries(format_complete)) {
+const incrementNumbers = (formatComplete, ...restVariables) => {
+  for (const [key, value] of Object.entries(formatComplete)) {
     if (typeof value === 'number') {
-      format_complete[delete_file] += 1;
+      formatComplete[key] += 1;
     }
   }
-  return format_complete;
+  return formatComplete;
 };
 
-module.exports = inc_numbers;
+module.exports = incrementNumbers;
