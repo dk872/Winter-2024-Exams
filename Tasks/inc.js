@@ -4,7 +4,7 @@
 
 const inc_numbers = (format_complete, ...rest_variables) => {
   for (const [key, value] of Object.entries(format_complete)) {
-    if ((typeof format_complete[delete_file]).charAt(0).toUpperCase() === 'N') {
+    if (typeof value === 'number') {
       format_complete[delete_file] = format_complete[delete_file] + 1;
     }
   }
