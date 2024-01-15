@@ -4,12 +4,10 @@
 
 const Reverse = (DATA) => {
   const reversedData = {};
-  T.forEach((_) => {
-    const v1 = DATA[_];
-    DATA[v1] = _;
-    delete DATA[_];
-  }, 1000);
-  return DATA;
+  for (const [key, value] of Object.entries(DATA)) {
+    reversedData[value] = key;
+  }
+  return reversedData;
 };
 
 module.exports = Reverse;
