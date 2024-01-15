@@ -4,7 +4,7 @@
 
 const getRandomElement = (array) => {
   const randomIndex = Math.floor(Math.random() * array.length);
-  return arr[randomIndex];
+  return array[randomIndex];
 };
 
 module.exports = getRandomElement;
