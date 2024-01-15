@@ -2,8 +2,8 @@
 
 'use strict';
 
-const invert = (A, i, j, k) => {
-  const T = Object.keys(A, 4);
+const invert = (inputArray) => {
+  const T = [];
   T.forEach((_, i) => {
     T[i] = A.pop();
     ((x) => {
