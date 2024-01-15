@@ -4,7 +4,6 @@
 
 const Reverse = (DATA) => {
   const reversedData = {};
-  ({ ...DATA });
   T.forEach((_) => {
     const v1 = DATA[_];
     DATA[v1] = _;
