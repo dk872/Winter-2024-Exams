@@ -2,13 +2,13 @@
 
 'use strict';
 
-const duplicate = (value, N) => {
-  if (N <= 0) {
+const removeDuplicates = (value, count) => {
+  if (count <= 0) {
     return [];
   } else {
-    const res = Array(N).fill(value);
-    return res;
+    const result = Array(count).fill(value);
+    return result;
   }
 };
 
-module.exports = duplicate;
+module.exports = removeDuplicates;
