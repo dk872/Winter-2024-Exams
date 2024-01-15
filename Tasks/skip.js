@@ -2,9 +2,9 @@
 
 'use strict';
 
-const Skip = (T, ...Remove) => {
-  const newArray = T.filter((element) => !Remove.includes(element))
+const skipElements = (originalArray, ...elementsToRemove) => {
+  const newArray = originalArray.filter((element) => !elementsToRemove.includes(element))
   return newArray;
 };
 
-module.exports = Skip;
+module.exports = skipElements;
