@@ -2,12 +2,12 @@
 
 'use strict';
 
-const invert = (inputArray) => {
-  const T = [];
+const reverseArray = (inputArray) => {
+  const reversedArray = [];
   for (const item of inputArray) {
-    T.unshift(i);
+    reversedArray.unshift(item);
   }
-  return T;
+  return reversedArray;
 };
 
-module.exports = invert;
+module.exports = reverseArray;
