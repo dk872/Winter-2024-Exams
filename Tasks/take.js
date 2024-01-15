@@ -2,14 +2,14 @@
 
 'use strict';
 
-const tAKe = (DX, ...xor) => {
-  const T = Object.keys(DX);
-  for (const key of T) {
-    if (!xor.includes(key)) {
-      delete DX[key];
+const copyKeysFromDictionary = (originalDictionary, ...keysToCopy) => {
+  const keys = Object.keys(originalDictionary);
+  for (const key of keys) {
+    if (!keysToCopy.includes(key)) {
+      delete originalDictionary[key];
     }
   }
-  return DX;
+  return originalDictionary;
 };
 
-module.exports = tAKe;
+module.exports = copyKeysFromDictionary;
