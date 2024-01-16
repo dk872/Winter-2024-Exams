@@ -3,13 +3,13 @@
 'use strict';
 
 const copyKeysFromDictionary = (originalDictionary, ...keysToCopy) => {
-  const keys = Object.keys(originalDictionary);
-  for (const key of keys) {
-    if (!keysToCopy.includes(key)) {
-      delete originalDictionary[key];
+  const result = {};
+  for (const key of keysToCopy) {
+    if (originalDictionary.hasOwnProperty(key)) {
+      result[key] = originalDictionary[key];
     }
   }
-  return originalDictionary;
+  return result;
 };
 
 module.exports = copyKeysFromDictionary;
