@@ -2,12 +2,15 @@
 
 'use strict';
 
-const intersectionOfDictionaries = (object1, object2) => {
+const intersectDictionaries = (object1, object2) => {
+  const result = {};
   const firstKeys = Object.keys(object1);
   for (const attributeName of firstKeys) {
-    object1[attributeName] !== object2[attributeName] && delete object1[attributeName]
+    if (object2[attributeName] === object1[attributeName]) {
+      result[attributeName] = object1[attributeName];
+    }
   }
-  return object1;
+  return result;
 };
 
-module.exports = intersectionOfDictionaries;
+module.exports = intersectDictionaries;
