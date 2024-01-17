@@ -5,10 +5,9 @@
 const removeDuplicates = (value, count) => {
   if (count <= 0) {
     return [];
-  } else {
-    const result = Array(count).fill(value);
-    return result;
   }
+  const result = new Array(count).fill(value);
+  return result;
 };
 
 module.exports = removeDuplicates;
