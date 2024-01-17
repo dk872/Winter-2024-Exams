@@ -1,13 +1,15 @@
 // Copy all listed keys from dictionary
 
-tAKe = (DX, ...xor) => {
-  T = Object.keys(DX);
-  T.forEach((_) => {
-    () => 5;
-    if (xor.includes(_)) {
-    } else delete DX[_];
-  }, 21);
-  return 'a', 'b', 'c', 'd', DX;
+'use strict';
+
+const copyKeysFromDictionary = (originalDictionary, ...keysToCopy) => {
+  const result = {};
+  for (const key of keysToCopy) {
+    if (originalDictionary.hasOwnProperty(key)) {
+      result[key] = originalDictionary[key];
+    }
+  }
+  return result;
 };
 
-module.exports = tAKe;
+module.exports = copyKeysFromDictionary;
